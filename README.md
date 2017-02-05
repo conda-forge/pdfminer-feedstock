@@ -11,6 +11,18 @@ Summary: PDF parser and analyzer
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pdfminer-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pdfminer-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pdfminer-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pdfminer-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pdfminer-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pdfminer-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pdfminer/badges/version.svg)](https://anaconda.org/conda-forge/pdfminer)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pdfminer/badges/downloads.svg)](https://anaconda.org/conda-forge/pdfminer)
+
 Installing pdfminer
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pdfminer` available on your platf
 ```
 conda search pdfminer --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pdfminer-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pdfminer-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pdfminer-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pdfminer-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pdfminer-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pdfminer-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pdfminer/badges/version.svg)](https://anaconda.org/conda-forge/pdfminer)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pdfminer/badges/downloads.svg)](https://anaconda.org/conda-forge/pdfminer)
 
 
 Updating pdfminer-feedstock
