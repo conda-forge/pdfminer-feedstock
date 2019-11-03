@@ -30,6 +30,7 @@ test:
 about:
   home: http://euske.github.io/pdfminer/index.html
   license: MIT
+  license_file: LICENSE
   summary: 'PDF parser and analyzer'
 
 extra:
