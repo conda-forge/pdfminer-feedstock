@@ -1,27 +1,25 @@
-{% set name = "pdfminer" %}
 {% set version = "20140328" %}
 
 
 package:
-  name: {{ name }}
+  name: pdfminer
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pdfminer/pdfminer-{{ version }}.tar.gz
   sha256: ba187b93056586a14edd5e630cf63ae96b1cc84b611f55dcddbc997316d9f262
 
 build:
-  skip: True  # [py3k]
-  number: 1000
-  script: python setup.py install
+  number: 1001
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
-    - python
-
+    - python <3
+    - pip
   run:
-    - python
+    - python <3
 
 test:
   imports:
@@ -30,6 +28,7 @@ test:
 about:
   home: http://euske.github.io/pdfminer/index.html
   license: MIT
+  license_file: LICENSE
   summary: 'PDF parser and analyzer'
 
 extra:
