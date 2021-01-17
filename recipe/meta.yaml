@@ -1,4 +1,4 @@
-{% set version = "20140328" %}
+{% set version = "20191125" %}
 
 
 package:
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pdfminer/pdfminer-{{ version }}.tar.gz
-  sha256: ba187b93056586a14edd5e630cf63ae96b1cc84b611f55dcddbc997316d9f262
+  sha256: 9e700bc731300ed5c8936343c1dd4529638184198e54e91dd2b59b64a755dc01
 
 build:
-  number: 1001
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python <3
+  host:
+    - python >=3.6
     - pip
   run:
-    - python <3
+    - python >=3.6
 
 test:
   imports:
