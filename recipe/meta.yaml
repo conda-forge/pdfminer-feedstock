@@ -24,6 +24,10 @@ requirements:
 test:
   imports:
     - pdfminer
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://euske.github.io/pdfminer/index.html
