@@ -10,7 +10,7 @@ source:
   sha256: 9e700bc731300ed5c8936343c1dd4529638184198e54e91dd2b59b64a755dc01
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -20,10 +20,15 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - pycryptodome
 
 test:
   imports:
     - pdfminer
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://euske.github.io/pdfminer/index.html
